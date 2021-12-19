@@ -21,14 +21,19 @@ const getNextRandomIdx = (range, lastIdx) => {
 };
 
 function Stream({ link }) {
-  return <img style={{ width: '100vw', height: '100vh' }} src={link} />;
+  return (
+    <img style={{ width: '100vw', height: '100vh' }} src={link} alt="stream" />
+  );
 }
 
 function App() {
   const [word, setWord] = useState(randomWords());
-  const [streamIdx, setstreamIdx] = useState(0);
+  const [streamIdx, setStreamIdx] = useState(0);
 
-  const changeWordAndStream = () => {};
+  const changeWordAndStream = () => {
+    setWord(randomWords());
+    setStreamIdx(getNextRandomIdx());
+  };
 
   useEffect(() => {
     document.addEventListener('click', changeWordAndStream);
