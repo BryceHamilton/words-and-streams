@@ -2,12 +2,12 @@ import { useState, useEffect } from 'react';
 import randomWords from 'random-words';
 
 const streams = [
-  'http://194.208.63.44:85/cgi-bin/faststream.jpg?stream=half&fps=15&rand=COUNTER#.XSqRMEqKZOY.link',
-  'http://194.208.63.44:85/cgi-bin/faststream.jpg?stream=half&fps=15&rand=COUNTER#.XSqRMEqKZOY.link',
-  'http://208.72.70.171/mjpg/video.mjpg?fbclid=IwAR3paVjo4Bk9RkuwDdt4k9RmN4gXJVZdCajd-mi19wgmUCz-_zKP_stbM-0#.XSqRrwoegxI.link',
-  'http://138.118.33.201:80/mjpg/video.mjpg',
-  'http://209.194.208.53/mjpg/video.mjpg?fbclid=IwAR1YA03nMsMJ15k0Y8MGsiWzFoCtwgs5rVuhEaMO_eJHeZ4YeX0ncI-R7nE#.XSqd5uo4vZA.link',
-  'http://76.75.8.120/mjpg/video.mjpg?fbclid=IwAR0PtjyCJu2nYeETikhx_hqEHtlw-weesrGv3o3EuiP1mzovDCKy5tyeNzk#.XSqhzWT3q-o.link'
+  'https://194.208.63.44:85/cgi-bin/faststream.jpg?stream=half&fps=15&rand=COUNTER#.XSqRMEqKZOY.link',
+  'https://194.208.63.44:85/cgi-bin/faststream.jpg?stream=half&fps=15&rand=COUNTER#.XSqRMEqKZOY.link',
+  'https://208.72.70.171/mjpg/video.mjpg?fbclid=IwAR3paVjo4Bk9RkuwDdt4k9RmN4gXJVZdCajd-mi19wgmUCz-_zKP_stbM-0#.XSqRrwoegxI.link',
+  'https://138.118.33.201:80/mjpg/video.mjpg',
+  'https://209.194.208.53/mjpg/video.mjpg?fbclid=IwAR1YA03nMsMJ15k0Y8MGsiWzFoCtwgs5rVuhEaMO_eJHeZ4YeX0ncI-R7nE#.XSqd5uo4vZA.link',
+  'https://76.75.8.120/mjpg/video.mjpg?fbclid=IwAR0PtjyCJu2nYeETikhx_hqEHtlw-weesrGv3o3EuiP1mzovDCKy5tyeNzk#.XSqhzWT3q-o.link'
 ];
 
 const getNextRandomIdx = (range, lastIdx) => {
